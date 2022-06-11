@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"math/rand"
 	"net"
+	"time"
 	"weather/api"
 
 	"google.golang.org/grpc"
@@ -52,6 +53,8 @@ func (m *myWeatherService) QueryWeather(req *api.WeatherRequest,
 		if err != nil {
 			break
 		}
+
+		time.Sleep(time.Second)
 	}
 
 	return nil
