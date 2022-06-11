@@ -1,2 +1,1 @@
-# grpc
-gRPC quick start with Go
+# gRPC quick start with Go
