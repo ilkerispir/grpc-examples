@@ -3,7 +3,7 @@ syntax = "proto3";
 option go_package = "/api";
 
 service WeatherService {
-  rpc QueryWeather (WeatherRequest) returns (WeatherResponse);
+  rpc QueryWeather (WeatherRequest) returns (stream WeatherResponse);
   rpc ListCities (ListCitiesRequest) returns (ListCitiesResponse);
 }
 
