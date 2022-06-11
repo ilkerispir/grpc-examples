@@ -1,4 +1,4 @@
-# gRPC quick start with Go
+# Weather App with gRPC
 
 ```bash
 protoc -I. --go_out=api --go_opt=paths=source_relative \
